@@ -1,26 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sample Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiz | DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    nav h1 {
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    nav ul li:hover {
+      color: #00f5ff;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      margin-top: 40px;
+      transition: 0.4s ease;
+    }
+
+    .glass:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 245, 255, 0.4);
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 80vh;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #00f5ff, #00ff95);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      max-width: 700px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      border: none;
+      background: linear-gradient(90deg, #00f5ff, #00ff95);
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #00f5ff;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .skill {
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      transition: 0.3s ease;
+    }
+
+    .skill:hover {
+      background: rgba(0, 245, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      opacity: 0.7;
+    }
+
+    @media(max-width: 768px) {
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header><h1>Your Name</h1></header>
-    <nav><a href="#about">About</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a></nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Passionate developer creating simple web layouts.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Example: Tribute Page</p>
-            <p>Example: E-commerce Layout</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>GitHub: <a href="https://github.com" target="_blank">Username</a></p>
-        </section>
-    </main>
+
+  <div class="container">
+    <nav>
+      <h1>FAIZ</h1>
+      <ul>
+        <li>Home</li>
+        <li>Skills</li>
+        <li>Journey</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+    <section class="hero glass">
+      <h2>DevOps Engineer & Cloud Professional</h2>
+      <p>
+        Systems Engineer at Infosys with 3+ years in Cloud Support. 
+        Passionate about DevOps, Docker, Linux, and automation.
+        Currently mastering DevOps through #90DaysOfDevOps and preparing for Azure certifications.
+        Based in Nashik, Maharashtra.
+      </p>
+      <button class="btn">Let's Build Something</button>
+    </section>
+
+    <section class="glass">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Docker & Containers</div>
+        <div class="skill">Linux Administration</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Azure Fundamentals</div>
+        <div class="skill">Cloud Support</div>
+        <div class="skill">CI/CD Concepts</div>
+      </div>
+    </section>
+
+    <section class="glass">
+      <h2 class="section-title">Professional Journey</h2>
+      <p style="line-height:1.8;">
+        ✔ Systems Engineer at Infosys (Cloud Domain)<br><br>
+        ✔ Chemical Engineering Graduate transitioned into IT<br><br>
+        ✔ Founder of EcoCleanz (Eco-Friendly Cleaning Brand)<br><br>
+        ✔ Focused on becoming a high-level DevOps Engineer
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Faiz | DevOps Engineer | Built with Passion 🚀
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll("nav ul li").forEach(item => {
+      item.addEventListener("click", () => {
+        alert("Section coming soon 🚀");
+      });
+    });
+  </script>
+
 </body>
 </html>
